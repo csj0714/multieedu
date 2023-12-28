@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      console.log("funciton...4");
+
+      const eat = function () {
+        console.log("eat...");
+      };
+      function test(drink) {
+        drink();
+      }
+      test(function () {
+        console.log("drink()...");
+      });
+      function test2() {
+        return function () {
+          console.log("work()...");
+        };
+      }
+      let work = test2();
+      console.log(work);
+
+      eat();
+    </script>
+  </head>
+
+  <body onload="startEvent()">
+    <h1 id="h01">function4</h1>
+  </body>
+</html>

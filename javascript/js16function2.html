@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      console.log("funciton...2");
+
+      //함수정의 방법 4가지
+      //인자(매개변수)의 유무
+      //리턴값의 유무
+
+      //1.인자 X, 리턴 X
+      function test1() {
+        console.log("test1()....");
+      }
+      test1();
+
+      //2.인자 O, 리턴 X
+      function test2(x) {
+        console.log("test2(x)....");
+      }
+      test2();
+
+      //3.인자 X, 리턴 O
+      function test3() {
+        console.log("test3()....");
+        return 999;
+      }
+      test3();
+
+      //4.인자 O, 리턴 O
+      function test4(x) {
+        console.log("test4(x)....");
+        return 100;
+      }
+      test4();
+
+      class Person {
+        //함수정의 방법 4가지를 사용하여
+        //sleep1~4까지의 함수를 만들고 호출도 해보세요
+
+        sleep1() {
+          console.log("sleep1()..");
+        }
+        sleep2(x) {
+          console.log("sleep2(x)..");
+        }
+        sleep3() {
+          console.log("sleep3()..");
+          return "kim";
+        }
+        sleep4(x) {
+          console.log("sleep4(x)..");
+          return 99;
+        }
+      } //end class
+      let p = new Person(); //1000
+      p.sleep1();
+      p.sleep2();
+      p.sleep3();
+      p.sleep4();
+
+      new Person().sleep1(); //100
+      new Person().sleep2(); //101
+      new Person().sleep3(); //102
+      new Person().sleep4(); //103
+    </script>
+  </head>
+  <body>
+    <h1>function2</h1>
+  </body>
+</html>

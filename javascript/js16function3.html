@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      console.log("funciton...3");
+
+      //function함수 호출시 함수명만 정확하면된다.
+      //function함수는 중복된 이름을 사용할 수 있다.
+      //중복된 함수는 가장마지막 정의된 함수가 호출된다.
+
+      test(); //ok
+      function test() {
+        console.log("test()...111");
+      }
+      test(); //ok
+      test(99); //ok
+
+      function test(x, y) {
+        console.log("test()...222");
+      }
+    </script>
+  </head>
+  <body>
+    <h1>function3</h1>
+  </body>
+</html>

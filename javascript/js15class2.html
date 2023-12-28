@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      console.log("class2");
+
+      //객체를 만드는 방법 : {},new Object(),class(객체식별자를 부여가능)
+
+      class Student {
+        kor = 99; //Publec field
+        eng = 88; //Publec field
+        #math = 77; //Private field
+        math = 66; //Publec field
+      }
+
+      let st = new Student();
+      console.log(st);
+
+      st.kor = 11;
+      st.eng = 22;
+      //st.#math = 33;//Private field error
+      st.math = 33;
+      console.log(st);
+    </script>
+  </head>
+  <body>
+    <h1>class2</h1>
+  </body>
+</html>

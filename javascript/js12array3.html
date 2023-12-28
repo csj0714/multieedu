@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>arr2</h1>
+    <script>
+      let arr = [
+        [11, 22, 33],
+        [111, 222, 333],
+      ];
+      console.log(arr);
+
+      for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr[i].length; j++) {
+          const element = arr[i][j];
+          console.log(element);
+        }
+      }
+      for (const i in arr) {
+        for (const j in arr[i]) {
+          console.log(arr[i][j]);
+        }
+      }
+      arr.forEach(function (item, i) {
+        item.forEach(function (item2, j) {
+          console.log(j, item[j], item2);
+        });
+      });
+    </script>
+  </body>
+</html>

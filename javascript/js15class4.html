@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Car {
+        #price = 0;
+        #model = "noModel";
+        #driver_name = "noName";
+        constructor() {
+          console.log("Car()...");
+        }
+
+        set price(price) {
+          this.#price = price;
+        }
+
+        get price() {
+          return this.#price;
+        }
+
+        set model(model) {
+          this.#model = model;
+        }
+        get model() {
+          return this.#model;
+        }
+      }
+
+      //객체 속성 은닉 후
+      //get set 메소드로 정의하기
+
+      let car = new Car();
+      console.log(car);
+      car.price = 1000;
+      car.model = "BMW";
+      console.log(car);
+      console.log(car.price);
+      console.log(car.model);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      console.log("ajax...");
+      const req = new XMLHttpRequest();
+
+      req.addEventListener("load", function () {
+        console.log(this.responseText);
+
+        let obj_json = JSON.parse(this.responseText);
+        console.log(obj_json);
+        console.log(obj_json.name, obj_json.age);
+
+        document.querySelector("#name").innerHTML = obj_json.name;
+        document.querySelector("#age").innerHTML = obj_json.age;
+      });
+      req.open("GET", "http://127.0.0.1:5500/js17_json.txt");
+      req.send();
+    </script>
+  </head>
+  <body>
+    <h1>AJAX...</h1>
+    <h3 id="name"></h3>
+    <h3 id="age"></h3>
+    <script>
+      console.log("end body.....");
+    </script>
+  </body>
+</html>

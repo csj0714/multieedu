@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      console.log("class3");
+
+      //객체를 만드는 방법 : {},new Object(),class(객체식별자를 부여가능)
+
+      class Student {
+        kor = 99; //Publec field
+        eng = 88; //Publec field
+        #math = 77; //Private field
+        math = 66; //Publec field
+
+        //생성자는 1개만 정의가능
+        //파라메터(매개변수) undefined에대한  default value설정가능
+        constructor(kor = 0, eng = 0, math1 = 0, math2 = 0) {
+          console.log(kor);
+          console.log(eng);
+          console.log(math1);
+          console.log(math2);
+          this.kor = kor;
+          this.eng = eng;
+          this.#math = math1;
+          this.math = math2;
+        }
+      }
+
+      let st = new Student();
+      console.log(st);
+
+      st = new Student(11, 22, 33, 44);
+      console.log(st);
+    </script>
+  </head>
+  <body>
+    <h1>class3</h1>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      console.log("funciton...4");
+
+      //1.함수를 리터럴로 사용할 수 있다.
+      //리터럴 : 할당가능한 모든 데이터(정수,실수,함수,배열,,,)
+      //할당가능한 위치 : 함수의 인자,리턴문,할당연산자
+
+      //2.함수변수 - 정의시 함수명 필요없음.
+      //변수에 익명함수를 할당한다.
+      //fn_var();//error
+      let fn_var = function () {
+        console.log("fn....");
+      };
+
+      fn_var();
+
+      const startEvent = function () {
+        document.querySelector("#h01").onclick = function () {
+          console.log("onclick....");
+        };
+      };
+
+      // window.onload = function () {
+      //     console.log("onload....");
+
+      //     document.querySelector("#h01").onclick = function () {
+      //         console.log("onclick....");
+      //     };
+
+      // };
+
+      //3.함수호출시 인자로 익명함수 전달
+      function sleep(time = 0) {
+        console.log("sleep time + 1 : ", time + 1);
+      }
+      sleep(8); //9
+      sleep(); //NaN or default value
+
+      function study(fn_param) {
+        console.log("study()...", fn_param);
+        fn_param();
+      }
+      study(function () {
+        console.log("fn_param()...");
+      });
+
+      //4.리턴문에 익명함수 할당.
+      function stop() {
+        console.log("stop()....");
+        // return 100;
+        // return "kim";
+        // return [11,22,33];
+        // return {name:"kim",age:33};
+        return function () {
+          console.log("return fn....");
+          return 111;
+        };
+      }
+      let result = stop();
+      console.log(result);
+      console.log(result());
+
+      const eat = function () {
+        console.log("eat...");
+      };
+      function test(drink) {
+        drink();
+      }
+      test(function () {
+        console.log("drink()...");
+      });
+      function test2() {
+        return function () {
+          console.log("work()...");
+        };
+      }
+      let work = test2();
+      console.log(work);
+
+      eat();
+    </script>
+  </head>
+
+  <body onload="startEvent()">
+    <h1 id="h01">function4</h1>
+  </body>
+</html>

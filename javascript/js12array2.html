@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>array2</h1>
+    <script>
+      let arr = [11, 22, 33];
+      console.log(arr);
+
+      for (let i = 0; i < arr.length; i++) {
+        const element = arr[i];
+      }
+      for (const i in arr) {
+        console.log(arr[i]);
+      }
+      arr.forEach(function (item, i) {
+        console.log(i, arr[i], item);
+      });
+    </script>
+  </body>
+</html>
