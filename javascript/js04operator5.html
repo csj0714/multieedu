@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      console.log(false || true);
+      //앞자리가 참이면 뒷자리 상관없이 참이되고,
+      //앞자리가 거짓이면 뒷자리에 따라 결과가 달라짐 -> 뒷자리와 똑같은 결과가 할당됌
+      let name = "";
+      let x = name || "Lee";
+      console.log("x:", x);
+
+      let user_name = "kim";
+      user_name ||= "choi"; //비어있으면 할당되고 채워져있으면 그대로
+      console.log("user_name:", user_name);
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #customers {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      input[type="text"],
+      textarea,
+      select {
+        width: 100%;
+        padding: 8px 8px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ff8f8f;
+        border-radius: 14px;
+        box-sizing: border-box;
+      }
+
+      #customers td,
+      #customers th {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+      }
+
+      #customers tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      #customers tr:hover {
+        background-color: #ddd;
+      }
+
+      #customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+
+        background-color: #04aa6d;
+        color: white;
+      }
+      thead td {
+        background-color: greenyellow;
+      }
+      .td01 {
+        width: 50px;
+      }
+      .td02 {
+        width: 250px;
+      }
+      input[type="number"] {
+        width: 10%;
+      }
+      input[type="submit"]:hover {
+        background-color: #b7e5b9;
+      }
+      div {
+        border-radius: 15px;
+        background-color: #f0f0f0;
+        padding: 20px;
+      }
+      input[type="submit"] {
+        width: 30%;
+        background-color: #4caf50;
+        color: white;
+        padding: 8px 8px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 14px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>게시글 작성 페이지</h1>
+      <form action="#" method="get">
+        <table border="1" id="customers">
+          <thead>
+            <tr>
+              <th><label for="">항목</label></th>
+              <th>입력</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="td01"><label for="num">번호</label></td>
+              <td class="td02">
+                11<input type="hidden" id="num" name="num" value="11"">
+              </td>
+            </tr>
+            <tr>
+              <td class="td01"><label for="title">제목</label></td>
+              <td class="td02">
+                <input
+                  type="text"
+                  id="title"
+                  name="title"
+                  value=""
+                  placeholder="제목"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="td01"><label for="content">내용</label></td>
+              <td class="td02">
+                <textarea
+                  name="content"
+                  id="content"
+                  cols="30"
+                  rows="10"
+                  placeholder="내용을 입력하세요."
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td class="td01"><label for="user">작성자</label></td>
+              <td class="td02">
+                <input
+                  type="text"
+                  id="user"
+                  name="user"
+                  value=""
+                  placeholder="작성자"
+                />
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2" class="td02">
+                <input type="submit" value="글쓰기 완료" />
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

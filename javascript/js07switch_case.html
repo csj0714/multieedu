@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>switch~case</h1>
+    <script>
+      console.log("switch~case");
+
+      let name = "ki";
+      switch (name) {
+        case "km":
+          console.log("Hello", name);
+          break;
+        case "ki":
+          console.log("Hi", name);
+          break; //하위 case 실행시키고 싶을때 break 지우기
+        case "ki":
+          console.log("Hdi", name);
+          break;
+        default:
+          console.log("GoodBye", name);
+          break; //default에서는 break 생략 가능
+      }
+      const su = 82;
+      console.log((su / 10).toFixed());
+      switch (parseInt(su / 10)) {
+        case 9:
+          console.log("A");
+        case 8:
+          console.log("B");
+        default:
+          break;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+body {
+  background-color: rgb(255, 223, 223);
+}
+h1,
+nav,
+p {
+  text-align: center;
+}
+hr {
+  width: 450px;
+}
+#title01 {
+  color: blue;
+}
+
+.map {
+  font-size: 20pt;
+}
+.info {
+  font-size: 10pt;
+}

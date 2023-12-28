@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>성적처리 미션</h1>
+    <h1 id="h_kor">국어:99</h1>
+    <h1 id="h_eng">영어:99</h1>
+    <h1 id="h_math">수학:99</h1>
+    <h1 id="h_total">총점:297</h1>
+    <h1 id="h_avg">평균:99.0</h1>
+    <h1 id="h_grade">등급:A</h1>
+
+    <form action="#" method="get">
+      <input type="number" id="i_kor" value="99" />
+      <input type="number" id="i_eng" value="88" />
+      <input type="number" id="i_math" value="77" />
+      <button id="btn">계산하기</button>
+    </form>
+
+    <script>
+      let h_kor = document.querySelector("#h_kor");
+      let h_eng = document.querySelector("#h_eng");
+      let h_math = document.querySelector("#h_math");
+      let h_total = document.querySelector("#h_total");
+      let h_avg = document.querySelector("#h_avg");
+      let h_grade = document.querySelector("#h_grade");
+      const btn = document.querySelector("#btn");
+
+      btn.onclick = function () {
+        let kor = document.querySelector("#i_kor").value;
+        let eng = document.querySelector("#i_eng").value;
+        let math = document.querySelector("#i_math").value;
+        let total = parseInt(kor) + parseInt(eng) + parseInt(math);
+        let avg = total / 3.0;
+        let grade = avg >= 90 ? "A" : avg >= 80 ? "B" : avg >= 70 ? "C" : "D";
+        h_kor.innerHTML = "국어:" + kor;
+        h_eng.innerHTML = "영어:" + eng;
+        h_math.innerHTML = "수학:" + math;
+        h_total.innerHTML = "총점:" + total;
+        h_avg.innerHTML = "평균:" + avg;
+        h_grade.innerHTML = "등급:" + grade;
+      };
+    </script>
+  </body>
+</html>

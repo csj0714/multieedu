@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input[type="text"],
+      input[type="password"],
+      input[type="tel"],
+      select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      input[type="submit"] {
+        width: 100%;
+        background-color: #4caf50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>회원가입폼</h3>
+    <form action="#" method="post" enctype="multipart/form-data">
+      <table>
+        <tr>
+          <td><label for="id">id : </label></td>
+          <td><input type="text" name="id" value="asd123" id="id" /></td>
+        </tr>
+        <tr>
+          <td><label for="pw">pw : </label></td>
+          <td><input type="password" name="pw" value="0000" id="pw" /></td>
+        </tr>
+        <tr>
+          <td><label for="name">이름 : </label></td>
+          <td><input type="text" name="name" value="홍길동" id="name" /></td>
+        </tr>
+        <tr>
+          <td><label for="tel">전화번호 : </label></td>
+          <td>
+            <input type="text" name="tel" value="010-0000-0000" id="tel" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="img">이미지 : </label></td>
+          <td>
+            <input type="file" name="img" value="010-0000-0000" id="img" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="hob">취미 : </label></td>
+          <td>
+            <input type="checkbox" id="hobby" name="hobby1" value="baseball" />
+            <label for="hobby2">야구</label>
+            <input
+              type="checkbox"
+              id="hobby2"
+              name="hobby2"
+              value="basketball"
+            />
+            <label for="hobby">농구</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="gen">성별 : </label>
+          </td>
+          <td>
+            <label for="gender1">남</label>
+            <input type="radio" name="gender" id="gender1" value="man" />
+            <label for="gender2">여</label>
+            <input type="radio" name="gender" id="gender2" value="woman" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="birthday">생년월일 : </label></td>
+          <td>
+            <input type="date" name="birthday" id="birthday" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="study_pct">학습진도 : </label></td>
+          <td><input type="range" name="study_pct" id="study_pct" />%</td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="submit" value="join" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

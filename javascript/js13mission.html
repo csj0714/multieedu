@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>mission</h1>
+    <h3 class="name">1</h3>
+    <h3 class="name">2</h3>
+    <h3 class="name">3</h3>
+    <div id="d01">동적으로 h3태그들로 표현</div>
+    <script>
+      console.log("mission");
+
+      let names = ["kim", "lee", "yang", "a", "asad"];
+      const d01 = document.querySelector("#d01");
+      const name = document.querySelectorAll(".name");
+
+      let datas = "";
+      for (i = 0; i < names.length; i++) {
+        datas += "<h3>" + names[i] + "</h3>";
+      }
+      d01.innerHTML = datas;
+    </script>
+  </body>
+</html>

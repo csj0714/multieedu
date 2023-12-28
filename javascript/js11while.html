@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      console.log("while");
+
+      //갯수,길이가 정해져있지않고 무한반복을 전제로할경우.
+      //while문을 사용하게되며,break문으로 제어가능.
+      let i = 0;
+      while (i < 10) {
+        console.log(i);
+        i++;
+      }
+
+      //while문이 참일때만 반복문 실행
+      while (true) {
+        x = prompt("종료하시려면 x입력", "x");
+        console.log("x:", x);
+        if (x === "x") break;
+      }
+
+      //조건식이 false라 하도라도 반드시 한번은 do블럭을 실행
+      do {
+        x = prompt("종료하시려면 x입력", "x");
+        console.log("x:", x);
+        if (x === "x") break;
+      } while (false);
+    </script>
+  </head>
+  <body>
+    <h1>while</h1>
+  </body>
+</html>

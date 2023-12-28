@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input[type="text"],
+      input[type="password"],
+      input[type="tel"],
+      select {
+        width: 100%;
+        padding: 8px 8px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ff8f8f;
+        border-radius: 14px;
+        box-sizing: border-box;
+      }
+
+      input[type="submit"] {
+        width: 30%;
+        background-color: #4caf50;
+        color: white;
+        padding: 8px 8px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 14px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      div {
+        border-radius: 15px;
+
+        padding: 20px;
+      }
+
+      #memberTable {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      #memberTable td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+      }
+
+      #memberTable tr:nth-child(even) {
+        background-color: #ebebeb;
+      }
+
+      #memberTable tr:hover {
+        background-color: #ffc6c6;
+      }
+      #memberTable ul {
+        list-style-type: none;
+      }
+      body {
+        background-image: url("images/workplace.jpg");
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <h3>헬스 카페 가입</h3>
+      <img src="images/health.jpg" alt="헬스" width="70%" />
+      <!-- <form action="#" method="post" enctype="multipart/form-data"> -->
+      <form action="#" method="get">
+        <!--?id=admin&pw=hi1234&name=kim&tel=010  -->
+        <table id="memberTable">
+          <tr>
+            <td><label for="id">이름:</label></td>
+            <td>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value="홍길동"
+                placeholder="이름"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="pw">닉네임:</label></td>
+            <td>
+              <input
+                type="text"
+                id="nickname"
+                name="nickname"
+                value="hi1234"
+                placeholder="닉네임"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="kg">목표 감량:</label></td>
+            <td>
+              <input
+                type="number"
+                id="kg"
+                name="kg"
+                value="0kg"
+                placeholder="10"
+              />KG
+            </td>
+          </tr>
+          <tr>
+            <td><label for="color">선호하는 운동복 색깔:</label></td>
+            <td>
+              <input type="checkbox" id="red" name="red" value="red" />
+              <label for="red">빨강</label>
+              <input type="checkbox" id="black" name="black" value="black" />
+              <label for="black">검정</label>
+              <input type="checkbox" id="blue" name="blue" value="blue" />
+              <label for="blue">파랑</label>
+              <input type="checkbox" id="yellow" name="yellow" value="yellow" />
+              <label for="yellow">노랑</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <h3>헬스 카페 가맹 헬스장 목록</h3>
+              <ul class="list">
+                <li>강남지점</li>
+                <li>강북지점</li>
+                <li>부산지점</li>
+                <li>광주지점</li>
+                <li>제주도지점</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="submit" value="회원가입" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

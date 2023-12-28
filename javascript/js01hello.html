@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="h02">javascript/h1>
+    <h1 id="h01">javascript2</h1>
+    <h1 id="d01">javascript3</h1>
+    <button id="btn01">button1</button>
+    <button id="btn02">button2</button>
+    <script>
+      const h01 = document.querySelector("#h01");
+      console.log(document.querySelector("#h01"));
+      h01.onclick = function () {
+        console.log("hello");
+      };
+      h01.innerText = "a-zA-Z 가-하";
+      console.log(document.querySelector("#h02"));
+      document.querySelector("#h02").innerText = "hello";
+      console.log(document.querySelector("#d01"));
+      document.querySelector("#d01").innerHTML = "<span>javascript</span>";
+      console.log(document.querySelector("#btn01"));
+      document.querySelector("#btn01").onclick = function () {
+        console.log("onclick");
+        document.querySelector("#d01").innerHTML = "hi";
+      };
+      document.querySelector("#btn02").onclick = function () {
+        console.log("onclick");
+        document.querySelector("#d01").innerHTML = "goodbye";
+      };
+    </script>
+  </body>
+</html>

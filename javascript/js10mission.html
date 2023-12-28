@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="number">mission</h1>
+    <label for="start">시작정수:</label>
+    <br />
+    <input type="number" id="start" name="start" value="1" />
+    <br />
+    <label for="last">끝정수:</label>
+    <br />
+    <input type="number" id="last" name="last" value="10" />
+    <button id="btn">계산</button>
+    <script>
+      console.log("mission.");
+      let sum = 0;
+      const btn = document.querySelector("#btn");
+      const start = document.querySelector("#start");
+      const last = document.querySelector("#last");
+      const number = document.querySelector("#number");
+      btn.onclick = function () {
+        startNum = parseInt(start.value);
+        lastNum = parseInt(last.value);
+        for (i = startNum; i <= lastNum; i++) {
+          sum += i;
+        }
+        number.innerText = sum;
+        console.log(sum);
+        sum = 0;
+      };
+    </script>
+  </body>
+</html>

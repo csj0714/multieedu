@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      console.log("for2");
+
+      for (let i = 0; i < 10; i++) {
+        console.log(i);
+        if (true) {
+          if (i == 5) {
+            break;
+          }
+        }
+      }
+      for (let i = 0; i < 10; i++) {
+        if (true) {
+          if (i == 5) {
+            continue;
+          }
+        }
+        console.log(i);
+      }
+      for (x = 0; x < 3; x++) {
+        for (let i = 0; i < 10; i++) {
+          console.log(x, i);
+        }
+        console.log("===");
+      }
+    </script>
+  </head>
+  <body>
+    <h1>반복문2</h1>
+  </body>
+</html>
