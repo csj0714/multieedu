@@ -1,0 +1,14 @@
+package test.com;
+
+public class Person {
+	public int age = 33;
+	String name = "kim";
+	int[] score = new int[] { 11, 22, 33 };
+
+	void test() {
+		class Cat {
+
+		}
+	}
+}
+//import 해주면 다른 패키지에서도 사용가능

@@ -1,0 +1,32 @@
+package test.com;
+
+public class Test01Hello {
+
+	public static void main(String[] args) {
+		// 한줄주석
+		System.out.println("hello" + " " + " kim");
+		System.out.println("hello1 " + 100);
+		System.out.println("\thello2");
+		System.out.println("hello3\n");
+		System.out.println();
+		System.out.println("hello3");
+		System.out.println("공자왈 \"충효\"");
+		System.out.printf("공자왈 '충효'");
+		System.out.println("d");
+
+		int kor = 99;
+		int eng = 88;
+		int math = 77;
+		System.out.println("kor" + kor + "eng" + eng + "math77");
+		double avg = 99.999;
+		System.out.printf("avg%.2f\n", avg);
+
+		System.out.printf("boolean : %b\n", true);
+		System.out.printf("boolean : %B\n", true);
+
+		String name = "kim";
+		System.out.printf("name:%s %s", name);
+		System.out.println("name:%10s\n", name);
+	}// end main
+
+}// end class

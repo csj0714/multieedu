@@ -1,0 +1,11 @@
+package test.com;
+
+public class Store {
+	int getCount(int x) {
+		return x / 200;
+	}
+
+	int change(int x) {
+		return x % 200;
+	}
+}

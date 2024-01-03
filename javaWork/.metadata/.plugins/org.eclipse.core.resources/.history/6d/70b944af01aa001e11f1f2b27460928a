@@ -1,0 +1,11 @@
+package test.com;
+
+public class BoardProcess {
+	Board[] listMember() {
+		Board[] list = new Board[3];
+		list[0] = new Board(1, "admin1", "hi1111", "kim1", "011");
+		list[1] = new Board(2, "admin2", "hi1112", "kim2", "012");
+		list[2] = new Board(3, "admin3", "hi1113", "kim3", "013");
+		return new Board[] {};
+	}
+}

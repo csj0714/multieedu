@@ -1,0 +1,19 @@
+package test.com;
+
+public class Test02switch_case {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("switch~case");
+		String key1 = "c001";
+		switch () {
+		case value: {
+			
+			yield type;
+		}
+		default:
+			throw new IllegalArgumentException("Unexpected value: " + );
+		}
+	}
+
+}

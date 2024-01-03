@@ -1,0 +1,8 @@
+package test.com;
+
+public class MemberProcess {
+
+	Member[] aaa() {
+
+	}
+}

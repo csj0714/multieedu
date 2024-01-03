@@ -1,0 +1,13 @@
+package test.com;
+
+import java.util.Scanner;
+
+public class Test01Scanner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("input your name:");
+		Scanner scanner = new Scanner(null);
+	}
+
+}

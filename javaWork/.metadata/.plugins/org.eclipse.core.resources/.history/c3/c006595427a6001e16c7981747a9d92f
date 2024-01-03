@@ -1,0 +1,41 @@
+package test.com;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Test01if2_mission {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		System.out.println("이름: ");
+		String name = br.readLine();
+		System.out.println("국어: ");
+		int kor = Integer.parseInt(br.readLine());
+		System.out.println("영어: ");
+		int eng = Integer.parseInt(br.readLine());
+		System.out.println("수학: ");
+		int math = Integer.parseInt(br.readLine());
+		int total = kor + eng + math;
+		double avg = total / 3.0;
+		char grade;
+
+		if (avg >= 90) {
+			grade = 'A';
+		} else if (avg >= 80) {
+			grade = 'B';
+		} else if (avg >= 70) {
+			grade = 'C';
+		} else if (avg >= 60) {
+			grade = 'D';
+		} else {
+			grade = 'F';
+		}
+		System.out.printf("%s, 국어(%d), 영어(%d), 수학(%d), 총점(%d), 평균(%.2f), 등급(%c)", name, kor, eng, math, total, avg,
+				grade);
+	}
+
+}

@@ -1,0 +1,33 @@
+package test.com;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Test04while4 {
+
+	public static void main(String[] args) throws IOException {
+		System.out.println("while");
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		String x = "x";
+		do {
+			System.out.println("while....");
+
+			System.out.println("input your name:");
+			String name = br.readLine();
+			System.out.println("name:" + name);
+
+			System.out.println("종료시 x 입력(계속하려면 아무키입력)");
+			x = br.readLine();
+			System.out.println(x);
+//			if(x.equals("x")) {
+//				break;
+//			}
+		} while (!x.equals("x"));
+
+		System.out.println("end main...");
+
+	}// end main
+
+}// end class

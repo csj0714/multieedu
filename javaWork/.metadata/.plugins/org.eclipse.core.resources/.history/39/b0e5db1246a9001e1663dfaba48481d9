@@ -1,0 +1,14 @@
+package test1.com;
+
+import test.com.Person;
+
+public class Test01class {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Person p = new Person();
+		System.out.println(p.age);
+
+	}
+
+}

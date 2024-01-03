@@ -1,0 +1,8 @@
+package test.com;
+
+public class Store {
+	int getCount(int x) {
+		System.out.printf("커피 %d개 구입가능 잔돈 %d원", x / 200, x % 200);
+		return x / 200;
+	}
+}

@@ -1,0 +1,15 @@
+package test.com;
+
+public class Test01Math {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Math...");
+		System.out.println(Math.PI); // 원주율
+		System.out.println(Math.abs(-200)); // 절댓값
+		System.out.println(Math.random()); // 랜덤
+		System.out.println(Math.ceil(4.34)); // 올림
+		
+	}
+
+}

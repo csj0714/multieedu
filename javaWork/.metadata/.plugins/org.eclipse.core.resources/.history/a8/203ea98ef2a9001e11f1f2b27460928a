@@ -1,0 +1,13 @@
+package test.com;
+
+public class Test03method {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Store s = new Store();
+		
+		
+	}
+
+}

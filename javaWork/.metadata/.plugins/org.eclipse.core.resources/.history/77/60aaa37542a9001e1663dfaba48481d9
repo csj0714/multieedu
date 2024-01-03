@@ -1,0 +1,13 @@
+package test.com;
+
+public class Test01object {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		class Person {
+			int age = 33;
+			String nameString = "kim";
+		}
+	}
+
+}

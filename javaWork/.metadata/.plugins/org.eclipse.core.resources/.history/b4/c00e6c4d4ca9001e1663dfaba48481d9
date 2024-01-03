@@ -1,0 +1,44 @@
+package test.com;
+
+import test1.com.Student;
+
+//임포트 단축키 : ctrl + shift + o
+public class Test01object4 {
+
+	public static void main(String[] args) {
+		System.out.println("object...3");
+
+		Student st = new Student();// 생성자 호출(콜)
+
+		st.name = "kim";
+		st.kor = 99;
+		st.eng = 88;
+		st.math = 77;
+
+		st.total = st.kor + st.eng + st.math;
+
+		st.avg = st.total / 3.0;
+
+		if (st.avg >= 90) {
+			st.grade = "A";
+		} else if (st.avg >= 80) {
+			st.grade = "B";
+		} else if (st.avg >= 70) {
+			st.grade = "C";
+		} else if (st.avg >= 60) {
+			st.grade = "D";
+		} else {
+			st.grade = "F";
+		}
+
+		System.out.println(st.name);
+		System.out.println(st.kor);
+		System.out.println(st.eng);
+		System.out.println(st.math);
+		System.out.println(st.total);
+		System.out.println(st.avg);
+		System.out.println(st.grade);
+
+	}// end main
+
+}// end class

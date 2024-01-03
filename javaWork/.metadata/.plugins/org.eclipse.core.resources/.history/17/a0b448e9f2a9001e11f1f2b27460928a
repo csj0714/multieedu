@@ -1,0 +1,13 @@
+package test.com;
+
+public class Test03method {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Store s = new Store();
+		
+		System.out.printf("커피 %d개 구입가능 잔돈 %d원", s.getCount(1100));
+	}
+
+}

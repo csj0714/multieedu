@@ -1,0 +1,22 @@
+package test.com;
+
+public class Test01method {
+
+	void test01() {
+		
+	}
+	int test02(int x) {
+		return x * 10;
+	}
+	void test03(String str) {
+		
+	}
+	String test04() {
+		return "kim";
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

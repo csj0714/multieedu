@@ -1,0 +1,8 @@
+package test.com;
+
+public class Person {
+	static int[] study2() {
+		System.out.println();
+		return new int[] { 11, 22, 33 };
+	}
+}

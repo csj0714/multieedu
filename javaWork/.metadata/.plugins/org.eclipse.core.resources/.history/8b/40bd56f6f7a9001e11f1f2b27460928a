@@ -1,0 +1,18 @@
+package test.com;
+
+public class Store {
+	int coffee = 200;
+	String[] products = new String[] { "과자", "음료수", "껌", "커피", "아이스크림" };
+	
+	int getCount(int money) {
+		return money / coffee;
+	}
+
+	int change(int money) {
+		return money % coffee;
+	}
+
+	String[] product() {
+		return new String[] { "a" };
+	}
+}

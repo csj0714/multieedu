@@ -1,0 +1,17 @@
+package test.com;
+
+public class Person {
+
+	// 접근제한자 = public, private, protected, default (package)
+	// final = 상수
+	public final int age = 33;
+	public String name = "kim";
+	int[] score = new int[] { 11, 22, 33 };
+
+	void test() {
+		class Cat {
+
+		}
+	}
+}
+//import 해주면 다른 패키지에서도 public 사용가능

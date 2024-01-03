@@ -1,0 +1,13 @@
+package test.com;
+
+public class Test03String {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("String....");
+
+		String txt = "abcdefg";
+		System.out.println("length: " + txt.length());
+	}
+
+}

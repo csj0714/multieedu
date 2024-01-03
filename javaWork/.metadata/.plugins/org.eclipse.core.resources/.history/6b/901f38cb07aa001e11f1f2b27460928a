@@ -1,0 +1,12 @@
+package test.com;
+
+public class Test01Math {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Math...");
+		System.out.println(Math.PI);
+		System.out.println(Math.abs(-200));
+	}
+
+}

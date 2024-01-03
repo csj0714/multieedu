@@ -1,0 +1,13 @@
+package test.com;
+
+public class Store {
+	int coffee = 200;
+
+	int getCount(int money) {
+		return money / coffee;
+	}
+
+	int change(int money) {
+		return money % coffee;
+	}
+}

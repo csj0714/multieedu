@@ -1,0 +1,24 @@
+package test.com;
+
+import java.sql.Timestamp;
+import java.util.Date;
+import java.util.GregorianCalendar;
+
+public class Test02Date {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Date d = new Date();
+		System.out.println(d);
+
+		java.sql.Date sd = new java.sql.Date(0);
+		System.out.println(sd);
+
+		Timestamp tt = new Timestamp(1);
+		System.out.println(tt);
+
+		GregorianCalendar gc = new GregorianCalendar();
+
+	}
+
+}

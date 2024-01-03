@@ -1,0 +1,17 @@
+package test.com;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class Test04while3_mission {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		boolean bool = true;
+		while(bool) {
+			System.out.println();
+		}
+	}
+
+}
