@@ -1,9 +1,0 @@
-package test.com;
-
-public class Member {
-	int num;
-	String id;
-	String pw;
-	String name;
-	String tel;
-}

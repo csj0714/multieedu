@@ -1,8 +1,0 @@
-package test.com;
-
-public class BoardProcess {
-	Board[] listMember() {
-
-		return new Board[] {};
-	}
-}

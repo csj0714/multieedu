@@ -2,4 +2,10 @@
 <typeInfoHistroy>
     <typeInfo handle="=java07interface/src&lt;test.com{MemberInter.java[MemberInter" modifiers="513" timestamp="1704355896808"/>
     <typeInfo handle="=java07interface/src&lt;test.com{BoardInter.java[BoardInter" modifiers="513" timestamp="1704421672621"/>
+    <typeInfo handle="=java14thread/C:\/Users\/User\/.p2\/pool\/plugins\/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.9.v20231028-0858\/jre\/lib\/jrt-fs.jar`java.base=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/17\/docs\/api\/=/=/module=/true=/&lt;java.lang(Runnable.class[Runnable" modifiers="1537" timestamp="1698451290000"/>
+    <typeInfo handle="=java14thread/C:\/Users\/User\/.p2\/pool\/plugins\/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.9.v20231028-0858\/jre\/lib\/jrt-fs.jar`java.base=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/17\/docs\/api\/=/=/module=/true=/&lt;java.lang(Thread.class[Thread" modifiers="33" timestamp="1698451290000"/>
+    <typeInfo handle="=Diagram/src&lt;test.com{MemberDAO.java[MemberDAO" modifiers="513" timestamp="1704701438087"/>
+    <typeInfo handle="=java18Generic/src&lt;test.com{Bus.java[Bus" modifiers="1" timestamp="1704766532734"/>
+    <typeInfo handle="=java18Generic/src&lt;test.com{Car.java[Car" modifiers="1" timestamp="1704766515874"/>
+    <typeInfo handle="=java18Generic/src&lt;test.com{Taxi.java[Taxi" modifiers="1" timestamp="1704766720894"/>
 </typeInfoHistroy>

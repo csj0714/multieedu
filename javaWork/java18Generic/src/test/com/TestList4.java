@@ -1,11 +1,10 @@
 package test.com;
 
-public class TestList4<T> {
+public class TestList4<T extends Number> {
 
 	private T type;
 
 	public void addType(T type) {
-		// TODO Auto-generated method stub
 		this.type = type;
 	}
 
@@ -13,12 +12,11 @@ public class TestList4<T> {
 		return type;
 	}
 
-	public <G> G getGet(G g) {
+	public <G extends Number> G getGet(G g) {
 		return g;
 	}
 
-	public static <G> G getStaticGet(G g) {
-		// TODO Auto-generated method stub
+	public static <G extends Number> G getStaticGet(G g) {
 		return g;
 	}
 
